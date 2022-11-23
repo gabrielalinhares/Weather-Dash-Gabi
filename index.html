@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title> Weather Dashboard</title>
+</head>
+
+<body>
+    
+    <div id="header" >
+        <h1> ⛅ Weather Dashboard ⛅</h1>
+      
+    </div>
+
+    <div id="content" class="container">
+        <div class="row">
+
+            <!-- LEFT SIDE -->
+            <div id="content-left" class="col-md-3">
+                <form>
+                    <label for="searchcity">Search for a City:</label> 
+                    <div class="form-row">
+                        <input id="searchcity" class="form-control" name="city" value="Type City Here"></input>
+                        
+                        <button id="searchBn" class="btn btn-primary" type="submit"><i class="fas fa-search">Search</button>
+                    </div>
+                </form>
+                <!-- Searched cities -->
+                <ul id="searchResults" class="list-group mt-4"></ul>
+                <!-- Button to clear -->
+                <a id="clear" href="#"> </a>    
+            </div>
+
+            <!-- RIGHT SIDE -->
+            <div id="content-right" class="col-md-15 pt-4">
+                <div id="currentweather" class="border rounded"></div> <!--CURRENT WEATHER -->
+                <div id="five-day-forecast" class="mt-5"></div> <!-- FIVE DAYS FORECAST-->
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script> 
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="./assets/js/script.js"></script>
+    
+</body>
+</html>
